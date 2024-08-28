@@ -1,0 +1,227 @@
+Cmp-Mod V01 Created by PcbNew   date = 2024-05-03T15:05:35+0700
+
+BeginCmp
+TimeStamp = 02aed7c2-71c8-4921-b335-e321c0443edb
+Path = /77a3e1a3-5b13-41b3-a192-d0a74526b8e2
+Reference = U2;
+ValeurCmp = AZ1117-3.3;
+IdModule  = Micro:SOT-89-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 02bbb56c-2c01-44ac-95e9-76bbf1d5673d
+Path = /c86807c9-37cf-4130-88fb-d6f6ac5452ef
+Reference = D5;
+ValeurCmp = LED;
+IdModule  = Micro:LED_D4.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 0b00b9f3-7abb-4f1b-95ff-2eac7379e259
+Path = /f7b12257-2ddc-4413-a463-d020d14ed591
+Reference = C3;
+ValeurCmp = 100nF;
+IdModule  = Micro:C_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 2520b9e4-55fc-436f-be2b-c746fd6c8983
+Path = /ce8e746f-ea83-4cae-a042-9fcdcd1935f2
+Reference = SW1;
+ValeurCmp = SW_Push;
+IdModule  = Micro:SW_PUSH_6mm_H7.3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 2b5ebf5d-129c-4474-97fe-586a157b222e
+Path = /e5950ee9-7d4f-4819-a5af-bd1ad97a7849
+Reference = L2;
+ValeurCmp = 1mH;
+IdModule  = Micro:L_1206_3216Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 38259449-7699-4bbe-9299-31956372659d
+Path = /585ef71b-95eb-4ed9-8f38-e6c65bf5fbed
+Reference = C6;
+ValeurCmp = C_Polarized;
+IdModule  = Micro:CP_EIA-3216-18_Kemet-A;
+EndCmp
+
+BeginCmp
+TimeStamp = 424fa945-3080-457e-b555-320cbd893020
+Path = /84df9d7f-a86d-4e3b-955e-19e3d96647f2
+Reference = D4;
+ValeurCmp = WS2812B-2020;
+IdModule  = Micro:LED_WS2812B-2020_PLCC4_2.0x2.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 42975ccd-9c84-4a66-84e6-31d74033670c
+Path = /4c29f4e8-ed2c-4758-aa61-d38910f04a50
+Reference = C2;
+ValeurCmp = 4.7uF/400v;
+IdModule  = Micro:CP_Radial_D8.0mm_P3.50mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 4920460b-4d25-494e-91d6-3e3df247cf6f
+Path = /f4801409-ece3-4ca2-817a-c44575fef2f3
+Reference = R2;
+ValeurCmp = 8.2R;
+IdModule  = Micro:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 506c9cee-6549-4432-8941-97e2fc495265
+Path = /3c9103ae-1edb-44a9-a24d-8d43656ecd43
+Reference = R1;
+ValeurCmp = 2.05K/1%;
+IdModule  = Micro:R_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 60944e8d-3823-47c5-bc99-55a4c3b66402
+Path = /135f60a2-1b8b-42ad-ae1f-334c951931b4
+Reference = R3;
+ValeurCmp = 13K/1%;
+IdModule  = Micro:R_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 87ce70b2-b24b-4bff-9253-2fa0f6c8a35c
+Path = /9199b551-ae2a-4171-bf02-aedd57be7e6c
+Reference = U1;
+ValeurCmp = LNK306D;
+IdModule  = Micro:PowerIntegrations_SO-8B;
+EndCmp
+
+BeginCmp
+TimeStamp = b0975845-b7eb-42c9-a468-86f298ea0fba
+Path = /a3c25b1e-7b96-4fcf-82a3-1348cdfbc2d3
+Reference = D2;
+ValeurCmp = SS34;
+IdModule  = Micro:D_SMA;
+EndCmp
+
+BeginCmp
+TimeStamp = b17157fc-437e-4d80-b1ea-afd25ec212ae
+Path = /3b2b885d-cbcf-440b-ad7f-8c4234e4a422
+Reference = D1;
+ValeurCmp = MBS6;
+IdModule  = Micro:DIOB_MBS6;
+EndCmp
+
+BeginCmp
+TimeStamp = b2ff0d81-f899-4e03-a9c7-b8a241d0979b
+Path = /d283162c-97e3-4f71-82fd-1025226b0b25
+Reference = C4;
+ValeurCmp = 10uF/35V;
+IdModule  = Micro:CP_EIA-6032-28_Kemet-C;
+EndCmp
+
+BeginCmp
+TimeStamp = c4f94004-4383-4b40-9cbe-3a29d7aaa521
+Path = /191d071c-4245-4219-9050-7ae0f6f98636
+Reference = L1;
+ValeurCmp = 1mH;
+IdModule  = Micro:L_1206_3216Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = c5bba54e-b807-4a5d-b228-cbe870dbfb40
+Path = /ab187332-1050-48bd-a912-3511e0d3f145
+Reference = C5;
+ValeurCmp = C;
+IdModule  = Micro:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = c83f76e3-9c3a-4d82-a90d-5ea7d13a312e
+Path = /1daca6e2-4552-45b0-8a23-8b4247feeb3d
+Reference = R4;
+ValeurCmp = 3.3K;
+IdModule  = Micro:R_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = ca1471d7-6c77-47e3-a088-91e8e89aec24
+Path = /8912b38f-d2c7-4cf0-948a-b8cb25912173
+Reference = C1;
+ValeurCmp = 4.7uF/400v;
+IdModule  = Micro:CP_Radial_D8.0mm_P3.50mm;
+EndCmp
+
+BeginCmp
+TimeStamp = e35f9b9b-d2b1-41d5-bd57-bd5c0b3fae6d
+Path = /5aafd324-532b-4c30-b06d-31b19b9ef765
+Reference = D3;
+ValeurCmp = SS34;
+IdModule  = Micro:D_SMA;
+EndCmp
+
+BeginCmp
+TimeStamp = 3cfc82db-67b4-4817-afa7-a22d1c8be2b5
+Path = /2a579bd8-81fb-4332-8d84-028a4e4d4bde
+Reference = J8;
+ValeurCmp = Conn_01x01_Pin;
+IdModule  = Micro:PinHeader_1x01_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 3ecc782a-dc15-41f7-8f55-0558f86d6e21
+Path = /112d3def-bbf9-40bd-9910-cae6c3f43368
+Reference = J3;
+ValeurCmp = Conn_01x02_Pin;
+IdModule  = Micro:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 46caeb14-65ec-40bf-80b1-772c6ea00197
+Path = /1dc51d24-ce3b-4a1a-bc23-cb85049bff6b
+Reference = J4;
+ValeurCmp = Conn_01x02_Pin;
+IdModule  = Micro:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 4ecc5989-a025-485d-933d-8008906b176c
+Path = /ebe78302-9c1d-4280-9868-d58c5aceede8
+Reference = J5;
+ValeurCmp = Conn_01x01_Pin;
+IdModule  = Micro:PinHeader_1x01_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = c893cf34-6f37-4920-a38a-28d0f70022b6
+Path = /62780773-62b2-4a2c-8f2d-0685d53cf6c0
+Reference = J6;
+ValeurCmp = Conn_01x01_Pin;
+IdModule  = Micro:PinHeader_1x01_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = c8a4b4cc-d51a-45ff-8d48-f896c21bb0c5
+Path = /101a98f2-fc03-4140-9068-e5d76c00b65d
+Reference = J2;
+ValeurCmp = Conn_01x02_Pin;
+IdModule  = Micro:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = d7efbf4e-8de1-4f4b-a380-61df4700b5d9
+Path = /984d39d6-4983-4cf4-b1da-6881a7c4547e
+Reference = J1;
+ValeurCmp = Conn_01x06_Pin;
+IdModule  = Micro:Hirose_DF13-06P-1.25DSA_1x06_P1.25mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = dd24caaf-598b-4561-b4cf-6a6e5bc0d645
+Path = /858b87cb-7610-46c6-aa89-bd0da9694302
+Reference = J7;
+ValeurCmp = Conn_01x01_Pin;
+IdModule  = Micro:PinHeader_1x01_P2.54mm_Vertical;
+EndCmp
+
+EndListe

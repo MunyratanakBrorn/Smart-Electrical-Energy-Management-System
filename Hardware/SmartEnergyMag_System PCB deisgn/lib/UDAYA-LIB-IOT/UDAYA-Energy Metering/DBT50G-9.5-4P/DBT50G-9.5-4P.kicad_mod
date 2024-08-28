@@ -1,0 +1,305 @@
+(footprint "DBT50G-9.5-4P"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Dinkle DT-55-B01X Terminal Block  pitch 10.00mm https://www.dinkle.com/en/terminal/DT-55-B01W-XX")
+	(tags "Dinkle DT-55-B01X Terminal Block  pitch 10.00mm")
+	(property "Reference" "J1"
+		(at 15.08 -10.16 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f74f5a23-99de-43d2-8237-b865362acfcb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Screw_Terminal_01x04"
+		(at 15.08 10.16 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e6747f82-1fc9-4c43-9495-6f11e0b44a1e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "TerminalBlock_Dinkle:TerminalBlock_Dinkle_DT-55-B01X-04_P9.50mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fd97e411-1e99-4e5b-b7a4-f8c370392f17")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00ff5ed6-cda4-40f4-b8d5-ef38b23c99a0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c8348bd-f5d2-4d87-b867-03b9867b4bb3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -5 -5)
+		(end 33.5 10.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "483014e7-a65d-4ff7-82fb-f6aad6c973f2")
+	)
+	(fp_line
+		(start -0.5 -2)
+		(end 0.5 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c6c5740d-ad30-484b-8f24-e786ac25b175")
+	)
+	(fp_line
+		(start -0.5 2)
+		(end 0.5 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "24d10b6a-bac4-40bf-80c9-45c917c65d05")
+	)
+	(fp_line
+		(start 8 -0.5)
+		(end 8 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4437854b-342e-427b-9ff0-f2656892db0b")
+	)
+	(fp_line
+		(start 8 0.5)
+		(end 9.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "27b20fe4-2514-45a2-9e69-ef72492b8efd")
+	)
+	(fp_line
+		(start 9.5 -2)
+		(end 10.5 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fab11377-f115-4169-8d1c-7faa2987bd54")
+	)
+	(fp_line
+		(start 9.5 -0.5)
+		(end 8 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3fd80d04-b072-43c7-8892-5a765aaaba70")
+	)
+	(fp_line
+		(start 9.5 2)
+		(end 10.5 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4fedfa48-7105-437a-97f4-c5e27722a401")
+	)
+	(fp_line
+		(start 18 -0.5)
+		(end 18 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "46da93e0-1782-4435-89d9-991a08c45cf9")
+	)
+	(fp_line
+		(start 18 0.5)
+		(end 19.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f11da971-8b62-4422-9e97-e2a33a580188")
+	)
+	(fp_line
+		(start 19.5 -2)
+		(end 20.5 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0d06806d-4b88-4b9b-b960-b7300d380aab")
+	)
+	(fp_line
+		(start 19.5 -0.5)
+		(end 18 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b346cc3e-b10c-47a7-afb9-c68a8d70f647")
+	)
+	(fp_line
+		(start 19.5 2)
+		(end 20.5 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bd293213-7c29-4f13-b895-6deaac7d59cc")
+	)
+	(fp_line
+		(start 28 -0.5)
+		(end 28 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "168fff15-fe75-4eb2-8e1f-0d8f7da39641")
+	)
+	(fp_line
+		(start 28 0.5)
+		(end 29.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e98f006a-c468-47e0-b954-509b3db4c8e5")
+	)
+	(fp_line
+		(start 29.5 -0.5)
+		(end 28 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "377d35c9-da51-4ae4-8e58-601b97ad0eb4")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "c29896e0-e296-4e1a-b3c8-5d805555bbc3")
+	)
+	(fp_circle
+		(center 10 0)
+		(end 10.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "bf1c3545-b3f5-475b-804c-47028df8742d")
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 6 6)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "35ef8c72-e48b-4b87-b913-ec088003695a")
+	)
+	(pad "2" thru_hole roundrect
+		(at 9.5 0)
+		(size 6 6)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(chamfer_ratio 0.2)
+		(chamfer)
+		(uuid "db0be2f7-fcf6-4fce-af7a-9eb0a601bdcf")
+	)
+	(pad "3" thru_hole roundrect
+		(at 19 0)
+		(size 6 6)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(chamfer_ratio 0.2)
+		(chamfer)
+		(uuid "336b9e73-93e1-4aa1-bdea-5fd7961ee26c")
+	)
+	(pad "4" thru_hole roundrect
+		(at 28.5 0)
+		(size 6 6)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(chamfer_ratio 0.2)
+		(chamfer)
+		(uuid "3103bfd3-3c69-40c3-b9f2-4421341bd550")
+	)
+	(model "D:/Noch kakada/UDAYA-LIB-IOT/UDAYA-Energy Metering/DBT50G-9.5-4P/TERMINAL BLOCK v1.step"
+		(offset
+			(xyz -5.5 -12.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

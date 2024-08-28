@@ -1,0 +1,436 @@
+(footprint "DIOB_MBS6"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -29.01591 -3.990759 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f8f1b44e-577f-4692-96af-b1da7d6dcf20")
+		(effects
+			(font
+				(size 0.787402 0.787402)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "MBS6"
+		(at 0.2 3.6 0)
+		(layer "F.Fab")
+		(uuid "97a25a0b-1a99-4b1e-8956-420ddb739757")
+		(effects
+			(font
+				(size 0.787402 0.787402)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "MBS6:DIOB_MBS6"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4154791d-3961-43cf-b4e7-894914e2d646")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3d6ae397-3438-457b-8a48-b3533ad03a4b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "\n0.8A, 600V, Standard Bridge Rectifier\n"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a3385adf-8776-4b52-b62a-e5c13e3cfb32")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Taiwan Semiconductor"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2136c74a-2839-4950-840a-cdf03ef0ce82")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MAXIMUM_PACKAGE_HEIGHT" "2.9mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1e6a92a9-49dc-4a50-96b9-fa833944c9c2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Package" "TO-269AA-4 Taiwan Semiconductor"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a47b3158-d74c-4839-9333-e516c5b8b036")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Price" "None"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1d609c18-62c1-4eb4-b553-7b3f6e4572e6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Check_prices" "https://www.snapeda.com/parts/MBS6/Taiwan+Semiconductor/view-part/?ref=eda"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9e3d36d7-9a6e-4486-b786-f4e8fb978ba4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "STANDARD" "Manufacturer Recommendations"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a3d409e0-944d-4629-8c7a-acdf9f56d2cb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "PARTREV" "Q2309"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "088742d2-7a90-4975-86f8-befbaa3b24c3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "SnapEDA_Link" "https://www.snapeda.com/parts/MBS6/Taiwan+Semiconductor/view-part/?ref=snap"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "890cea60-9dad-4e26-a7d5-e32d7c2ae994")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "MBS6"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f3fe6dea-3525-4910-af8c-a8d270b37dd3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=486189&manufacturer=Taiwan Semiconductor&part_name=MBS6&search_term=bridge rectifier"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9ee56039-1cd1-4282-8cf3-9a32816e5e8a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "SNAPEDA_PN" "X"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ba1aa892-9e97-4c23-a07f-a8bc0cb7764c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Availability" "In Stock"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "046f8614-3398-4606-8dcd-0c2f608e8420")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MANUFACTURER" "Taiwan Semiconductor"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "88286ced-f5e0-4447-bd31-967a24d25825")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.925 -2.349999)
+		(end -1.925001 -2.07)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3524ed3e-fd1c-49d9-a905-35567329f29e")
+	)
+	(fp_line
+		(start -1.925 2.349999)
+		(end -1.925001 2.07)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0e001bfb-4cb1-49c5-a186-bb463bc1a524")
+	)
+	(fp_line
+		(start -1.925 2.349999)
+		(end 1.925 2.349999)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0521f403-490f-416f-96e1-d037b250b04a")
+	)
+	(fp_line
+		(start 1.925 -2.349999)
+		(end -1.925 -2.349999)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "30f0b685-f0a9-4146-8266-342f488c7d55")
+	)
+	(fp_line
+		(start 1.925 2.349999)
+		(end 1.925001 2.07)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "18de5101-0ce0-4280-8a8b-8b47b7ea2f50")
+	)
+	(fp_line
+		(start 1.925001 -2.07)
+		(end 1.925 -2.349999)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "784bbea0-6da8-433b-847c-ac57d3ec803f")
+	)
+	(fp_circle
+		(center -4.75 -1.25)
+		(end -4.65 -1.25)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "df2152db-a853-4f5b-bb62-deb479c144d9")
+	)
+	(fp_line
+		(start -4.3 -2.6)
+		(end -4.3 2.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2de4bd0d-d3bf-4353-9c6a-aeabedd0611d")
+	)
+	(fp_line
+		(start -4.3 2.6)
+		(end 4.3 2.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bd5ae60f-c040-4653-a476-52e3a92c9443")
+	)
+	(fp_line
+		(start 4.3 -2.6)
+		(end -4.3 -2.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "557b7f21-00ac-48a1-936a-cf2c7b908a47")
+	)
+	(fp_line
+		(start 4.3 2.6)
+		(end 4.3 -2.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4a6f9560-5093-44ed-b59c-0fa138195e8f")
+	)
+	(fp_line
+		(start -1.925 -2.349999)
+		(end -1.925 2.349999)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "685bab88-d3bf-4213-b006-43a3c5228e0e")
+	)
+	(fp_line
+		(start -1.925 2.349999)
+		(end 1.925 2.349999)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5441a70f-9a69-47df-a5ef-9c80e7eb8c79")
+	)
+	(fp_line
+		(start 1.925 -2.349999)
+		(end -1.925 -2.349999)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0b3de42c-eabf-4303-bd4f-df51f9145502")
+	)
+	(fp_line
+		(start 1.925 2.349999)
+		(end 1.925 -2.349999)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "48096f5c-3798-44c5-ae57-6b19e31f2af7")
+	)
+	(fp_circle
+		(center -4.75 -1.25)
+		(end -4.65 -1.25)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "801e9213-f172-4d3a-90f2-aa0b80833efd")
+	)
+	(pad "+" smd rect
+		(at -3.15 -1.25)
+		(size 1.8 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "ba268264-cf4c-457a-967c-40f8895c414f")
+	)
+	(pad "-" smd rect
+		(at -3.15 1.25)
+		(size 1.8 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "864cdb58-d40d-4165-aea1-c7db57c52f2c")
+	)
+	(pad "AC1" smd rect
+		(at 3.15 -1.25)
+		(size 1.8 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "fce5674e-e075-42a8-b562-ef66eb354c32")
+	)
+	(pad "AC2" smd rect
+		(at 3.15 1.25)
+		(size 1.8 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "ed78b017-16bd-4be2-bfb1-a37818e18210")
+	)
+	(model "D:/Noch kakada/UDAYA-LIB-IOT/UDAYA-Energy Metering/MBS6/MBS6.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

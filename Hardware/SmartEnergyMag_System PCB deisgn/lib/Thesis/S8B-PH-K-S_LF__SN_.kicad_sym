@@ -1,0 +1,131 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "S8B-PH-K-S_LF__SN_" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "J" (id 0) (at -2.54 12.7 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "S8B-PH-K-S_LF__SN_" (id 1) (at -2.54 -13.97 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "S8B-PH-K-S_LF__SN_:DW08R" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "JST Sales" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\nConnector Header Through Hole, Right Angle 8 position 0.079 (2.00mm)\n" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "NON STANDARD-8 J.S.T." (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/S8B-PH-K-S%20(LF)(SN)/JST+Sales+America+Inc./view-part/?ref=snap" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "S8B-PH-K-S (LF)(SN)" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/S8B-PH-K-S%20(LF)(SN)/JST+Sales+America+Inc./view-part/?ref=eda" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "S8B-PH-K-S_LF__SN__0_0"
+      (polyline
+        (pts (xy -1.27 6.35) (xy 0.0 6.35)) (stroke (width 0.6096))
+      )
+      (polyline
+        (pts (xy -1.27 8.89) (xy 0.0 8.89)) (stroke (width 0.6096))
+      )
+      (polyline
+        (pts (xy -1.27 3.81) (xy 0.0 3.81)) (stroke (width 0.6096))
+      )
+      (polyline
+        (pts (xy -1.27 1.27) (xy 0.0 1.27)) (stroke (width 0.6096))
+      )
+      (polyline
+        (pts (xy -1.27 -1.27) (xy 0.0 -1.27)) (stroke (width 0.6096))
+      )
+      (polyline
+        (pts (xy -1.27 -3.81) (xy 0.0 -3.81)) (stroke (width 0.6096))
+      )
+      (polyline
+        (pts (xy -1.27 -6.35) (xy 0.0 -6.35)) (stroke (width 0.6096))
+      )
+      (polyline
+        (pts (xy -1.27 -8.89) (xy 0.0 -8.89)) (stroke (width 0.6096))
+      )
+      (rectangle (start -2.54 -11.43) (end 1.905 11.43)
+        (stroke (width 0.4064)) (fill (type background))
+      )
+      (pin passive line (at 5.08 8.89 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 6.35 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 3.81 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 1.27 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 -1.27 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 -3.81 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 -6.35 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "7"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 -8.89 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "8"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)

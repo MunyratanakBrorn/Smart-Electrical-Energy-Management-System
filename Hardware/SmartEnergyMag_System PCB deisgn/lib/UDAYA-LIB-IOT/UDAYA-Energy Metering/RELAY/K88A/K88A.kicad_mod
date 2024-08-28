@@ -1,0 +1,147 @@
+(footprint "K88A"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Omron Relay, SPST, https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf")
+	(tags "Omron Relay SPST")
+	(property "Reference" "K2"
+		(at 16.8 -7.8 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "402842f2-fc0e-4a27-8e1d-ad695af634b1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "G2RL-1A-H"
+		(at 1.4 -7.8 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5bab4954-6758-46ac-9426-feff7235bc61")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "K88A:K88A"
+		(at 1 -20.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "833eaf08-f09d-4e0d-91be-be51976b3fc6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf"
+		(at 0.2 -25.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "54ff7683-0f00-4872-99a1-ba7c59442942")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "General Purpose Low Profile Relay SPST Through Hole, Omron G2RL series, Normally Open, High Sensitivity, 10A 250VAC"
+		(at 0.2 -25.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b3f1210d-ef9a-4a09-a5a1-638e2bd2fdb5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start 0 -15)
+		(end 30.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "899e02b0-ba8c-4e9c-b2fb-d7dfc18f881b")
+	)
+	(fp_rect
+		(start 0 -15)
+		(end 30.5 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "78b94a2a-2a3b-45b3-9c91-68db2da346dd")
+	)
+	(pad "13" thru_hole roundrect
+		(at 28.7 -11.55 90)
+		(size 4.2 2.2)
+		(drill oval 3.2 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.125)
+		(uuid "91feaf7f-a614-4f73-8ee1-5dd6309239e6")
+	)
+	(pad "14" thru_hole roundrect
+		(at 26 -3.95 90)
+		(size 4.2 2.2)
+		(drill oval 3.2 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.125)
+		(uuid "e312d497-a6e5-486d-a3e3-d00fb507edc3")
+	)
+	(pad "A1" thru_hole roundrect
+		(at 1.7 -2)
+		(size 2 2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.125)
+		(uuid "0a677965-e5f8-4dc7-a36d-1c03309bbd2d")
+	)
+	(pad "A2" thru_hole roundrect
+		(at 8.7 -2)
+		(size 2 2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.125)
+		(uuid "4f2858e7-86c7-4aef-a600-4e85f7e41b08")
+	)
+	(pad "A3" thru_hole roundrect
+		(at 5.2 -2)
+		(size 2 2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.125)
+		(uuid "8d0d614b-6771-4ed3-a7bd-bf8f21d07c20")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPST_Omron_G2RL-1A.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

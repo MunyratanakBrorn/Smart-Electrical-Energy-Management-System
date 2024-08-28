@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LNK306DG-TL
+D AC/DC Converters 225 mA (MDCM) 360 mA (CCM)
+K
+F https://www.power.com/sites/default/files/product-docs/lnk302_304-306.pdf
+$ENDCMP
+#
+#End Doc Library

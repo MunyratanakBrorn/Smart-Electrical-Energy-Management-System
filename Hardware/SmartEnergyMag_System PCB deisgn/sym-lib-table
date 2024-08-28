@@ -1,0 +1,11 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MBS6")(type "KiCad")(uri "${KIPRJMOD}/lib/lib Dimmer/MBS6/MBS6.kicad_sym")(options "")(descr ""))
+  (lib (name "MCT2E")(type "KiCad")(uri "${KIPRJMOD}/lib/lib Dimmer/MCT2E/MCT2E.kicad_sym")(options "")(descr ""))
+  (lib (name "SK_95_25_STS_TO_220")(type "KiCad")(uri "${KIPRJMOD}/lib/lib Dimmer/SK_95_25_STS_TO_220/SK_95_25_STS_TO_220.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32-D0WD")(type "KiCad")(uri "${KIPRJMOD}/lib/ESP32-D0WD/ESP32-D0WD.kicad_sym")(options "")(descr ""))
+  (lib (name "SM04B-ZESS-TB_LF__SN_")(type "KiCad")(uri "${KIPRJMOD}/lib/SM04B-ZESS-TB_LF__SN_/SM04B-ZESS-TB_LF__SN_.kicad_sym")(options "")(descr ""))
+  (lib (name "BC501SM")(type "KiCad")(uri "${KIPRJMOD}/lib/BC501SM/BC501SM.kicad_sym")(options "")(descr ""))
+  (lib (name "0533980671")(type "KiCad")(uri "${KIPRJMOD}/lib/Connector/0533980671/0533980671.kicad_sym")(options "")(descr ""))
+  (lib (name "533980471")(type "KiCad")(uri "${KIPRJMOD}/lib/Connector/533980471/533980471.kicad_sym")(options "")(descr ""))
+)

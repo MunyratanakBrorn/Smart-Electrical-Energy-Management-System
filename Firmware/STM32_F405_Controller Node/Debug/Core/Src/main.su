@@ -1,0 +1,15 @@
+../Core/Src/main.c:453:6:HAL_UART_RxCpltCallback	16	static
+../Core/Src/main.c:463:6:HAL_GPIO_EXTI_Callback	16	static
+../Core/Src/main.c:514:5:main	16	static
+../Core/Src/main.c:728:6:SystemClock_Config	88	static
+../Core/Src/main.c:771:9:ChkSum_Cal	24	static
+../Core/Src/main.c:784:6:BL0910_Uart_Write	24	static
+../Core/Src/main.c:799:6:BL0910_Uart_Read	24	static
+../Core/Src/main.c:828:6:BL0910_SoftRst	16	static
+../Core/Src/main.c:849:6:BL0910_Init	8	static
+../Core/Src/main.c:883:6:BL0910_Elect_Proc	16	static
+../Core/Src/main.c:1135:6:Energy_Cal	16	static
+../Core/Src/main.c:1147:6:BL0910_Write	16	static
+../Core/Src/main.c:1151:6:BL0910_Read	16	static
+../Core/Src/main.c:1185:6:stateRELAY	8	static
+../Core/Src/main.c:1371:6:Error_Handler	4	static,ignoring_inline_asm
