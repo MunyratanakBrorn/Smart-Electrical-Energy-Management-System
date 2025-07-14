@@ -59,18 +59,18 @@ The system operates in a clear, sequential flow:
 ### Hardware
 | Component                   | Model/Type                    | Role in Project                                             |
 | --------------------------- | ----------------------------- | ----------------------------------------------------------- |
-| 🎛️ **Central Gateway**      | ESP32-WROOM-32                | Wi-Fi communication, data aggregation, system coordinator   |
+| 🎛️ **Central Gateway**      | ESP32-WROOM-32U               | Wi-Fi communication, data aggregation, system coordinator   |
 | 🔬 **Controller Node**        | STM32F405RG                   | High-speed data acquisition, processing, and relay control  |
-| 🖥️ **HMI Display**            | (e.g., Nextion, DWIN)         | User interface for data visualization and direct control    |
-| ⚡️ **Sensors**                | (e.g., ACS712, ZMPT101B)      | Measures AC current and voltage                             |
-| 🔌 **Actuators**              | 5V / 12V Songle Relays        | Switches high-voltage electrical loads                      |
+| 🖥️ **HMI Display**            | (Squareline studio)     | User interface for data visualization and direct control    |
+| ⚡️ **Sensors**                | (BL0910)      | Measures AC current and voltage                             |
+| 🔌 **Actuators**              |12V Songle Relays        | Switches high-voltage electrical loads                      |
 
 ### Software & Firmware
 *   **Programming Languages:** C/C++
 *   **Frameworks & IDEs:**
     *   **ESP32:** PlatformIO with Arduino Framework
-    *   **STM32:** STM32CubeIDE, Keil MDK
-    *   **HMI:** (e.g., Nextion Editor)
+    *   **STM32:** STM32CubeIDE
+    *   **HMI:** (Squareline studio)
 *   **Communication Protocols:** UART (Node-to-Gateway), Wi-Fi (Gateway-to-Network)
 
 ---
