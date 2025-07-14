@@ -1,7 +1,7 @@
 # Smart Electrical Energy Management System (SEEMS)
 
 <p align="center">
-  <img src="https://placehold.co/150x150/0d1117/c9d1d9?text=Project\nLogo" alt="Project Logo">
+  <img src="System Overview/Programming Framework.png" alt="Project Logo">
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@ A local Human-Machine Interface (HMI) provides an intuitive dashboard for at-a-g
 
 | Main Dashboard | Real-time Data Graph |
 | :---: | :---: |
-| <img src="n" alt="HMI Main Screen" width="400"/> | <img src="https://placehold.co/400x250/161b22/c9d1d9?text=Live+Energy+Graph" alt="HMI Graph" width="400"/> |
+| <img src="n" alt="HMI Main Screen" width="400"/> | <img src="System Overview/Programming Framework.png" alt="HMI Graph" width="400"/> |
 
 ---
 
