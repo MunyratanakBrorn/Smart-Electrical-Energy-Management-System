@@ -27,7 +27,7 @@ A local Human-Machine Interface (HMI) provides an intuitive dashboard for at-a-g
 
 | Main Dashboard | Real-time Data Graph |
 | :---: | :---: |
-| <img src="n" alt="System Overview/main.png" width="400"/> | <img src="System Overview/dasborad.jpg" alt="HMI Graph" width="400"/> |
+| <img src="System Overview/main.png" alt="System Overview/main.png" width="400"/> | <img src="System Overview/dasborad.jpg" alt="HMI Graph" width="400"/> |
 
 ---
 
@@ -61,8 +61,8 @@ The system operates in a clear, sequential flow:
 | --------------------------- | ----------------------------- | ----------------------------------------------------------- |
 | 🎛️ **Central Gateway**      | ESP32-WROOM-32U               | Wi-Fi communication, data aggregation, system coordinator   |
 | 🔬 **Controller Node**        | STM32F405RG                   | High-speed data acquisition, processing, and relay control  |
-| 🖥️ **HMI Display**            | (Squareline studio)     | User interface for data visualization and direct control    |
-| ⚡️ **Sensors**                | (BL0910)      | Measures AC current and voltage                             |
+| 🖥️ **HMI Display**            | Squareline studio     | User interface for data visualization and direct control    |
+| ⚡️ **Sensors**                | BL0910      | Measures AC current and voltage                             |
 | 🔌 **Actuators**              |12V Songle Relays        | Switches high-voltage electrical loads                      |
 
 ### Software & Firmware
@@ -102,8 +102,6 @@ To set up and run this project, follow these steps.
 ---
 
 ## 📂 Repository Structure
-
-.
 ├── 📂 Firmware/
 │ ├── 📂 ESP32_Gateway_SEEMs/
 │ ├── 📂 HMI Screen display/
