@@ -1,118 +1,250 @@
-# Smart Electrical Energy Management System (SEEMS)
+<!-- ============================== -->
+<!-- Smart Electrical Energy Management System (SEEMS) -->
+<!-- ============================== -->
+
+<h1 align="center">⚡ Smart Electrical Energy Management System (SEEMS)</h1>
 
 <p align="center">
-  <img src="System Overview/Programming Framework.png" alt="Project Logo">
+  <img src="System Overview/Programming Framework.png" alt="SEEMS System Diagram" width="600">
 </p>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Status-Complete-success" alt="Project Status"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Tech-ESP32%20%7C%20STM32-blueviolet" alt="Technology"></a>
+  <img src="https://img.shields.io/badge/Status-Complete-success" alt="Project Status">
+  <img src="https://img.shields.io/badge/Tech-ESP32%20%7C%20STM32-blueviolet" alt="Technology Stack">
 </p>
 
-A comprehensive IoT solution for monitoring, controlling, and optimizing electrical energy usage. This project was developed to fulfill the requirements for the Bachelor of Technology in Electronics Engineering at Preah Kossomak Polytechnic Institute.
+<p align="justify">
+  A robust and scalable IoT-based system for <strong>monitoring, controlling</strong>, and <strong>optimizing electrical energy usage</strong> in real time. This project was developed as part of the <strong>Bachelor of Technology in Electronics Engineering</strong> at <strong>Preah Kossomak Polytechnic Institute</strong>.
+</p>
 
-## 🌟 Introduction
+<hr>
 
-The **Smart Electrical Energy Management System (SEEMS)** addresses the growing need for intelligent energy consumption. By providing real-time data and remote control capabilities, this system empowers users to reduce energy waste, lower electricity costs, and contribute to a more stable power grid. The project is built on a distributed architecture, ensuring scalability and robustness for residential, commercial, or industrial applications.
+<!-- ============================== -->
+<!-- 🌐 Overview -->
+<!-- ============================== -->
 
----
+<h2>🌐 Overview</h2>
 
-## 🎨 Project Visuals
+<p align="justify">
+  The <strong>Smart Electrical Energy Management System (SEEMS)</strong> is designed to address the increasing need for smart energy solutions. It provides:
+  <ul>
+    <li>Real-time monitoring of electrical parameters</li>
+    <li>Local and remote control of appliances</li>
+    <li>Distributed architecture with STM32 controller nodes and an ESP32 gateway</li>
+    <li>Intuitive HMI for user interaction</li>
+  </ul>
+  Ideal for <strong>residential, commercial</strong>, or <strong>industrial</strong> applications, SEEMS is engineered with scalability, efficiency, and reliability in mind.
+</p>
 
-### 🖥️ HMI Screen Display
-A local Human-Machine Interface (HMI) provides an intuitive dashboard for at-a-glance monitoring and control.
+<hr>
 
-> **Note:** Replace these placeholder images with screenshots of your actual HMI. Upload your images to a folder in this repository (e.g., create a `docs/images` folder) and update the links.
+<!-- ============================== -->
+<!-- 🖼️ Project Visuals -->
+<!-- ============================== -->
 
-| Main Dashboard | Real-time Data Graph |
-| :---: | :---: |
-| <img src="System Overview/main.png" alt="System Overview/main.png" width="400"/> | <img src="System Overview/Screenshot 2025-07-16 092032.png" alt="HMI Graph" width="400"/> |
+<h2>🖼️ Project Visuals</h2>
 
----
+<h3>🔧 HMI Screen Snapshots</h3>
 
-### 💡 System Architecture
-The system employs a distributed architecture where a central gateway communicates with one or more controller nodes. This design is both resilient and scalable. The complete, high-resolution diagrams are available in the `System Overview` folder.
+<table>
+  <tr>
+    <th align="center">Main Dashboard</th>
+    <th align="center">Real-time Graph</th>
+  </tr>
+  <tr>
+    <td><img src="System Overview/main.png" width="400"/></td>
+    <td><img src="System Overview/dasborad.jpg" width="400"/></td>
+  </tr>
+</table>
+
+<p><em>Tip: Replace these with real screenshots. Store in <code>docs/images/</code> for better organization.</em></p>
+
+<!-- ============================== -->
+<!-- 🧠 System Architecture -->
+<!-- ============================== -->
+
+<h2>🧠 System Architecture</h2>
+
+<p align="justify">
+  The <strong>Smart Electrical Energy Management System (SEEMS)</strong> uses a distributed architecture, where a central gateway (ESP32) communicates with one or more controller nodes (STM32F405). This modular design enables real-time monitoring, reliable control, and flexible system expansion across residential, commercial, or industrial setups.
+</p>
 
 <p align="center">
-  <a href="System Overview/Hardware System diagram.jpg">
-    <img src="System Overview/Hardware System diagram.jpg" alt="System Architecture Diagram" width="700"/>
+  <a href="System Overview/Hardware System diagram.jpg" target="_blank">
+    <img 
+      src="System Overview/Hardware System diagram.jpg" 
+      alt="SEEMS Distributed System Architecture Diagram" 
+      width="700"
+      style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);"
+    />
   </a>
 </p>
 
----
+<p align="center">
+  <em>Click the image to view it in full resolution.</em>
+</p>
 
-## ⚙️ How It Works
+<ul>
+  <li><strong>STM32 Controller Node:</strong> Measures voltage/current, processes data, controls relays.</li>
+  <li><strong>ESP32 Gateway:</strong> Aggregates data, manages Wi-Fi/cloud connectivity, sends control commands.</li>
+  <li><strong>HMI Interface:</strong> Displays real-time feedback, allows local interaction.</li>
+</ul>
 
-The system operates in a clear, sequential flow:
+<hr>
 
-1.  **Sensing:** The **STM32F405 Controller Node** continuously measures electrical parameters (voltage, current) using dedicated sensors.
-2.  **Local Processing & Display:** The STM32 processes the raw data to calculate power and energy consumption. This information is immediately sent to the **HMI Screen** for local, real-time visualization.
-3.  **Gateway Communication:** The STM32 simultaneously transmits the data to the **ESP32 Gateway** via a reliable serial protocol (e.g., UART).
-4.  **Central Aggregation & Control:** The **ESP32 Gateway** aggregates data from all nodes. It handles Wi-Fi connectivity, allowing for potential cloud integration, data logging, or remote access. It also relays control commands back to the nodes.
-5.  **Actuation:** Based on user input from the HMI or remote commands, the STM32 Controller Node controls power relays to switch electrical loads on or off.
+<!-- ============================== -->
+<!-- ⚙️ How It Works -->
+<!-- ============================== -->
 
----
+<h2>⚙️ How It Works</h2>
 
-## 🛠️ Technical Specifications
+<ol>
+  <li><strong>Measurement:</strong> STM32F405 node measures voltage and current using BL0910 sensors.</li>
+  <li><strong>Processing & Display:</strong> STM32 calculates power/energy and sends data to the HMI screen.</li>
+  <li><strong>Communication:</strong> Data is sent to ESP32 via UART.</li>
+  <li><strong>Wi-Fi Gateway:</strong> ESP32 handles Wi-Fi and aggregates system data for remote access.</li>
+  <li><strong>Actuation:</strong> Relays are triggered based on local/remote user input to control loads.</li>
+</ol>
 
-### Hardware
-| Component                   | Model/Type                    | Role in Project                                             |
-| --------------------------- | ----------------------------- | ----------------------------------------------------------- |
-| 🎛️ **Central Gateway**      | ESP32-WROOM-32U               | Wi-Fi communication, data aggregation, system coordinator   |
-| 🔬 **Controller Node**        | STM32F405RG                   | High-speed data acquisition, processing, and relay control  |
-| 🖥️ **HMI Display**            | Squareline studio     | User interface for data visualization and direct control    |
-| ⚡️ **Sensors**                | BL0910      | Measures AC current and voltage                             |
-| 🔌 **Actuators**              |12V Songle Relays        | Switches high-voltage electrical loads                      |
+<hr>
 
-### Software & Firmware
-*   **Programming Languages:** C/C++
-*   **Frameworks & IDEs:**
-    *   **ESP32:** PlatformIO with Arduino Framework
-    *   **STM32:** STM32CubeIDE
-    *   **HMI:** (Squareline studio)
-*   **Communication Protocols:** UART (Node-to-Gateway), Wi-Fi (Gateway-to-Network)
+<!-- ============================== -->
+<!-- 🛠️ Technical Specifications -->
+<!-- ============================== -->
 
----
+<h2>🛠️ Technical Specifications</h2>
 
-## 🚀 Getting Started
+<h3>🔩 Hardware Components</h3>
 
-To set up and run this project, follow these steps.
+<table>
+  <tr>
+    <th>Component</th>
+    <th>Description</th>
+    <th>Role</th>
+  </tr>
+  <tr>
+    <td><strong>ESP32-WROOM-32U</strong></td>
+    <td>Wi-Fi-enabled MCU</td>
+    <td>Data aggregation, cloud gateway</td>
+  </tr>
+  <tr>
+    <td><strong>STM32F405RG</strong></td>
+    <td>High-performance MCU</td>
+    <td>Sensing, processing, load control</td>
+  </tr>
+  <tr>
+    <td><strong>HMI Display</strong></td>
+    <td>Designed using Squareline Studio</td>
+    <td>User interface</td>
+  </tr>
+  <tr>
+    <td><strong>BL0910</strong></td>
+    <td>Energy metering IC</td>
+    <td>AC voltage/current sensing</td>
+  </tr>
+  <tr>
+    <td><strong>12V Songle Relays</strong></td>
+    <td>Electromechanical switch</td>
+    <td>Load control (on/off)</td>
+  </tr>
+</table>
 
-### Prerequisites
-*   Install [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html).
-*   Install [PlatformIO IDE for VS Code](https://platformio.org/).
-*   Have all the necessary hardware components listed above.
+<h3>💻 Software Stack</h3>
 
-### 1. Hardware Assembly
-*   Assemble the electronic components according to the schematics and PCB layouts provided in the `Hardware/` directory.
-*   Ensure all connections between the STM32, ESP32, HMI, and sensor modules are secure.
+<ul>
+  <li><strong>Languages:</strong> C / C++</li>
+  <li><strong>Platforms:</strong>
+    <ul>
+      <li><strong>ESP32:</strong> PlatformIO + Arduino Framework</li>
+      <li><strong>STM32:</strong> STM32CubeIDE</li>
+      <li><strong>HMI:</strong> Squareline Studio</li>
+    </ul>
+  </li>
+  <li><strong>Protocols:</strong> UART (STM32 ↔ ESP32), Wi-Fi (ESP32 ↔ Network)</li>
+</ul>
 
-### 2. Firmware Flashing
-1.  **STM32 Controller Node:** Open the project from `Firmware/STM32_F405_Controller Node/` in STM32CubeIDE. Compile and flash the firmware to the STM32F405 board.
-2.  **ESP32 Gateway:** Open the project from `Firmware/ESP32_Gateway_SEEMs/` in PlatformIO. Configure your Wi-Fi credentials in the source code, then compile and upload the firmware.
-3.  **HMI Display:** Open the project from `Firmware/HMI Screen display/` using the appropriate HMI editor. Compile the project and upload the `.tft` file to the display (usually via an SD card).
+<hr>
 
-### 3. System Operation
-*   Power on all components.
-*   The HMI should display the main dashboard.
-*   The ESP32 will connect to your Wi-Fi network. You can monitor its serial output for status updates.
-*   The system is now operational. Real-time data will be visible on the HMI.
+<!-- ============================== -->
+<!-- 🚀 Getting Started -->
+<!-- ============================== -->
 
----
+<h2>🚀 Getting Started</h2>
 
-## 📂 Repository Structure
+<h3>🧰 Prerequisites</h3>
+<ul>
+  <li><a href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE</a></li>
+  <li><a href="https://platformio.org/">PlatformIO for VS Code</a></li>
+  <li>Hardware components as listed above</li>
+</ul>
+
+<h3>🧱 Hardware Setup</h3>
+<ul>
+  <li>Assemble components according to the provided schematics in <code>Hardware/</code></li>
+  <li>Ensure secure connections between STM32, ESP32, sensors, and HMI</li>
+</ul>
+
+<h3>🔌 Firmware Upload</h3>
+<ol>
+  <li><strong>STM32 Node:</strong> Open <code>Firmware/STM32_F405_Controller Node/</code> in STM32CubeIDE and flash firmware.</li>
+  <li><strong>ESP32 Gateway:</strong> Open <code>Firmware/ESP32_Gateway_SEEMs/</code> in PlatformIO, set Wi-Fi credentials, and upload code.</li>
+  <li><strong>HMI:</strong> Open <code>Firmware/HMI Screen display/</code> in Squareline Studio and upload compiled <code>.tft</code> file via SD card.</li>
+</ol>
+
+<h3>🔄 Running the System</h3>
+<ul>
+  <li>Power on all devices</li>
+  <li>HMI should load the dashboard</li>
+  <li>ESP32 connects to Wi-Fi and communicates with STM32</li>
+  <li>System becomes operational for real-time monitoring and control</li>
+</ul>
+
+<hr>
+
+<!-- ============================== -->
+<!-- 📁 Project Structure -->
+<!-- ============================== -->
+
+<h2>📁 Repository Structure</h2>
+
+<pre>
+📦 SEEMS
 ├── 📂 Firmware/
-│ ├── 📂 ESP32_Gateway_SEEMs/
-│ ├── 📂 HMI Screen display/
-│ └── 📂 STM32_F405_Controller Node/
+│   ├── 📂 ESP32_Gateway_SEEMs/
+│   ├── 📂 STM32_F405_Controller Node/
+│   └── 📂 HMI Screen display/
 ├── 📂 Hardware/
 ├── 📂 System Overview/
 ├── 📂 Thesis Report and presentation/
 └── 📄 README.md
+</pre>
 
-## 🎓 Authorship & Acknowledgments
+<hr>
 
-This project was developed by **Mr. Brorn Munyratanak** & **Mr. Noch Kakada** as a final thesis for the Bachelor of Technology in **Electronics Engineering** at **Preah Kossomak Polytechnic Institute (Class of 2024)**.
+<!-- ============================== -->
+<!-- 👥 Authors & Acknowledgments -->
+<!-- ============================== -->
 
-We extend our sincere gratitude to our advisors and the faculty for their invaluable guidance and support.
+<h2>👥 Authors & Acknowledgments</h2>
+
+<p>This project was developed by:</p>
+<ul>
+  <li><strong>Mr. Brorn Munyratanak</strong></li>
+  <li><strong>Mr. Noch Kakada</strong></li>
+</ul>
+
+<p>Final Year Thesis – <strong>Electronics Engineering</strong><br>
+<strong>Preah Kossomak Polytechnic Institute</strong> (Class of 2024)</p>
+
+<p><em>Special thanks to our advisors and faculty members for their guidance and support throughout the project.</em></p>
+
+<hr>
+
+<!-- ============================== -->
+<!-- 📜 License -->
+<!-- ============================== -->
+
+<h2>📜 License</h2>
+
+<p>This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
