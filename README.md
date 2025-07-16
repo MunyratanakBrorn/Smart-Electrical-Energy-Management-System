@@ -54,7 +54,7 @@
   </tr>
   <tr>
     <td><img src="System Overview/main.png" width="400"/></td>
-    <td><img src="System Overview/dasborad.jpg" width="400"/></td>
+    <td><img src="System Overview/Screenshot 2025-07-16 092032.png" width="400"/></td>
   </tr>
 </table>
 
