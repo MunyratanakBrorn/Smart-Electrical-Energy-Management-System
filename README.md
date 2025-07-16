@@ -27,7 +27,7 @@ A local Human-Machine Interface (HMI) provides an intuitive dashboard for at-a-g
 
 | Main Dashboard | Real-time Data Graph |
 | :---: | :---: |
-| <img src="System Overview/main.png" alt="System Overview/main.png" width="400"/> | <img src="System Overview/dasborad.jpg" alt="HMI Graph" width="400"/> |
+| <img src="System Overview/main.png" alt="System Overview/main.png" width="400"/> | <img src="System Overview/Screenshot 2025-07-16 092032.png" alt="HMI Graph" width="400"/> |
 
 ---
 
