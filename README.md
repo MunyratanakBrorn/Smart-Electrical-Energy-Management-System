@@ -114,6 +114,18 @@ flowchart LR
 
 ---
 
+## 🎬 Live Demo
+
+<div align="center">
+  <img src="seems-animation.svg" alt="SEEMS animated demo: relay ON/OFF switching and live energy metering" width="760">
+  <br>
+  <em>Animated overview — relay <strong>ON/OFF</strong> load switching and live <strong>energy metering</strong> (voltage, current, power, energy).</em>
+</div>
+
+> ℹ️ The animation is an inline SVG (`seems-animation.svg`) — it plays automatically on GitHub with no external dependencies.
+
+---
+
 ## 🖼️ Project Visuals
 
 <table>
