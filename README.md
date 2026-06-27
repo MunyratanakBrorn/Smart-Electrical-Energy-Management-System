@@ -15,9 +15,12 @@
 ![Status](https://img.shields.io/badge/Status-Complete-success)
 ![Stack](https://img.shields.io/badge/MCU-ESP32%20%7C%20STM32F405-blueviolet)
 ![Build](https://img.shields.io/badge/Firmware-C%20%2F%20C%2B%2B-00599C)
+![Cloud](https://img.shields.io/badge/Cloud-ThingsBoard-FF6F00)
 ![Year](https://img.shields.io/badge/Thesis-2024-informational)
 
 </div>
+
+> 💡 **This is a public template.** Use it to bootstrap your own energy-monitoring node — click **"Use this template"** above.
 
 ---
 
@@ -26,10 +29,11 @@
 - [About the Project](#-about-the-project)
 - [Key Features](#-key-features)
 - [System Architecture](#-system-architecture)
-- [Workflow](#-end-to-end-workflow)
+- [End-to-End Workflow](#-end-to-end-workflow)
 - [Project Visuals](#-project-visuals)
 - [Tech Stack](#-tech-stack)
 - [Hardware Components](#-hardware-components)
+- [Communication Protocols](#-communication-protocols)
 - [Getting Started](#-getting-started)
 - [Repository Structure](#-repository-structure)
 - [Authors](#-authors)
@@ -39,7 +43,7 @@
 
 ## 🌐 About the Project
 
-The **Smart Electrical Energy Management System (SEEMS)** is a scalable, IoT-based solution that monitors, controls, and optimizes electrical energy consumption in real time. Built on a **distributed architecture** — STM32 controller nodes paired with an ESP32 gateway — the system is suitable for **residential, commercial, and industrial** deployments.
+The **Smart Electrical Energy Management System (SEEMS)** is a scalable, IoT-based solution that monitors, controls, and optimizes electrical energy consumption in real time. Built on a **distributed architecture** — STM32 controller nodes paired with an ESP32 gateway and a **ThingsBoard cloud platform** — the system is suitable for **residential, commercial, and industrial** deployments.
 
 Developed as a **Final Year Thesis** for the **Bachelor of Technology in Electronics Engineering** at **Preah Kossomak Polytechnic Institute** (Class of 2024).
 
@@ -50,17 +54,19 @@ Developed as a **Final Year Thesis** for the **Bachelor of Technology in Electro
 | | Feature | Description |
 |---|---------|-------------|
 | 📊 | **Real-Time Monitoring** | Live voltage, current, power, and energy readings |
-| 🎛️ | **Local & Remote Control** | Switch loads via the HMI touchscreen or over Wi-Fi |
+| 🎛️ | **Local & Remote Control** | Switch loads via HMI touchscreen or remotely over the cloud |
+| ☁️ | **Cloud Dashboard (ThingsBoard)** | Remote telemetry, visualization, and control via MQTT |
+| 🔆 | **Dimmer Control (TRIAC)** | Phase-angle dimming for adjustable loads |
 | 🧩 | **Distributed & Modular** | Add controller nodes without re-architecting the system |
+| 🗄️ | **Onboard Data Logging** | Local logging over I2C/SPI for resilience |
 | 🖥️ | **Intuitive HMI** | Touch dashboard built with SquareLine Studio |
 | 🔌 | **Reliable Actuation** | Relay-based load switching with safe-state handling |
-| ☁️ | **Cloud-Ready Gateway** | ESP32 aggregates data for remote access |
 
 ---
 
 ## 🧠 System Architecture
 
-SEEMS follows a **gateway–node** topology. A central **ESP32 gateway** coordinates one or more **STM32F405 controller nodes**, each responsible for local sensing and actuation. This separation of concerns keeps the system responsive and easy to expand.
+SEEMS follows a **gateway–node** topology. A central **ESP32 gateway** coordinates one or more **STM32F405 controller nodes** for local sensing and actuation, then publishes telemetry to the **ThingsBoard IoT platform** over **MQTT** for remote monitoring and control.
 
 <div align="center">
   <a href="System Overview/Hardware System diagram.jpg" target="_blank">
@@ -72,9 +78,11 @@ SEEMS follows a **gateway–node** topology. A central **ESP32 gateway** coordin
 
 | Layer | Component | Responsibility |
 |-------|-----------|----------------|
-| **Edge** | STM32F405 Node | Measure V/I, compute power & energy, drive relays |
-| **Gateway** | ESP32-WROOM-32U | Aggregate data, manage Wi-Fi/cloud, relay commands |
+| **Edge** | STM32F405 Node | Measure V/I, compute power & energy, drive relays & TRIAC dimmer |
+| **Gateway** | ESP32-WROOM-32U | Aggregate data, manage Wi-Fi/Ethernet, publish MQTT to cloud |
+| **Cloud** | ThingsBoard | Remote dashboards, telemetry storage, control commands |
 | **Interface** | HMI Display | Real-time feedback and local user control |
+| **Logging** | Data Logger (I2C/SPI) | Persist measurements locally |
 
 ---
 
@@ -82,25 +90,27 @@ SEEMS follows a **gateway–node** topology. A central **ESP32 gateway** coordin
 
 ```mermaid
 flowchart LR
-    A[AC Load] -->|sensing| B[BL0910<br/>Energy Meter IC]
-    B --> C[STM32F405<br/>Controller Node]
+    A[AC Load] -->|sensing| B[Energy Meter<br/>BL0910]
+    B -->|UART| C[STM32F405<br/>Controller Node]
     C -->|power / energy| D[HMI Display]
+    C -->|I2C / SPI| H[Data Logger]
     C -->|UART| E[ESP32 Gateway]
-    E -->|Wi-Fi| F[(Network / Cloud)]
+    E -->|MQTT over Wi-Fi / Ethernet| F[(ThingsBoard<br/>IoT Platform)]
     F -->|remote command| E
     D -->|local command| C
     E -->|control| C
-    C -->|switch| G[Relay → Load]
+    C -->|Relay switch| G[Load ON/OFF]
+    C -->|Timer PWM| I[TRIAC Dimmer]
 ```
 
 **Sequence**
 
 1. **Measurement** — The BL0910 IC senses AC voltage and current.
 2. **Processing** — The STM32F405 computes power and energy metrics.
-3. **Display** — Results are pushed to the HMI in real time.
+3. **Display & Logging** — Results are pushed to the HMI and logged locally via I2C/SPI.
 4. **Communication** — Data travels to the ESP32 over UART.
-5. **Gateway** — The ESP32 handles Wi-Fi and aggregates system data.
-6. **Actuation** — Relays switch loads based on local or remote input.
+5. **Gateway & Cloud** — The ESP32 publishes telemetry to ThingsBoard via MQTT (over Wi-Fi/Ethernet).
+6. **Actuation** — Relays switch loads and the TRIAC dimmer adjusts brightness, based on local or remote input.
 
 ---
 
@@ -128,8 +138,7 @@ flowchart LR
 | ESP32 Gateway | PlatformIO + Arduino Framework |
 | STM32 Node | STM32CubeIDE (HAL) |
 | HMI | SquareLine Studio |
-
-**Protocols:** UART (STM32 ↔ ESP32) · Wi-Fi (ESP32 ↔ Network)
+| Cloud Platform | ThingsBoard (MQTT) |
 
 ---
 
@@ -137,11 +146,25 @@ flowchart LR
 
 | Component | Description | Role |
 |-----------|-------------|------|
-| **ESP32-WROOM-32U** | Wi-Fi-enabled MCU | Data aggregation, cloud gateway |
-| **STM32F405RG** | High-performance Cortex-M4 MCU | Sensing, processing, load control |
+| **ESP32-WROOM-32U** | Wi-Fi-enabled MCU | Data aggregation, MQTT cloud gateway |
+| **STM32F405RG** | High-performance Cortex-M4 MCU | Sensing, processing, load & dimmer control |
 | **BL0910** | Energy metering IC | AC voltage/current sensing |
+| **TRIAC Dimmer** | Phase-angle control circuit | Adjustable lighting/load dimming |
 | **HMI Display** | SquareLine Studio UI | User interface |
 | **12V Songle Relays** | Electromechanical switch | Load on/off control |
+| **Data Logger** | I2C/SPI storage | Local measurement logging |
+
+---
+
+## 🔗 Communication Protocols
+
+| Protocol | Link | Purpose |
+|----------|------|---------|
+| **UART** | STM32 ↔ ESP32 · STM32 ↔ Energy Meter | Inter-MCU & sensor data exchange |
+| **MQTT** | ESP32 ↔ ThingsBoard | Cloud telemetry & remote control |
+| **Wi-Fi / Ethernet** | ESP32 ↔ Network | Internet connectivity |
+| **I2C / SPI** | STM32 ↔ Data Logger | Local data logging |
+| **Timer PWM** | STM32 ↔ TRIAC | Phase-angle dimming control |
 
 ---
 
@@ -151,27 +174,34 @@ flowchart LR
 
 - [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
 - [PlatformIO for VS Code](https://platformio.org/)
+- A [ThingsBoard](https://thingsboard.io/) account or self-hosted instance
 - Hardware components listed above
 
 ### Hardware Setup
 
 1. Assemble components per the schematics in `Hardware/`.
-2. Verify connections between the STM32, ESP32, BL0910 sensors, and HMI.
+2. Verify connections between the STM32, ESP32, BL0910 sensors, data logger, TRIAC dimmer, and HMI.
 
 ### Firmware Upload
 
 | Target | Steps |
 |--------|-------|
 | **STM32 Node** | Open `Firmware/STM32_F405_Controller Node/` in STM32CubeIDE → build → flash |
-| **ESP32 Gateway** | Open `Firmware/ESP32_Gateway_SEEMs/` in PlatformIO → set Wi-Fi credentials → upload |
+| **ESP32 Gateway** | Open `Firmware/ESP32_Gateway_SEEMs/` in PlatformIO → set Wi-Fi + ThingsBoard MQTT credentials → upload |
 | **HMI** | Open `Firmware/HMI Screen display/` in SquareLine Studio → export → load `.tft` via SD card |
+
+### Cloud Setup (ThingsBoard)
+
+1. Create a new **Device** in ThingsBoard and copy its access token.
+2. Set the token and broker host in the ESP32 firmware configuration.
+3. Import or build a dashboard to visualize incoming telemetry.
 
 ### Run
 
 1. Power on all devices.
 2. The HMI loads the dashboard.
-3. The ESP32 connects to Wi-Fi and links with the STM32.
-4. The system is live for real-time monitoring and control.
+3. The ESP32 connects to the network and publishes telemetry to ThingsBoard.
+4. The system is live for real-time local **and** remote monitoring and control.
 
 ---
 
